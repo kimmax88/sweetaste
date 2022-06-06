@@ -1,0 +1,267 @@
+$primary-color:#3F5D45;
+$secondary-color:#EAF0ED;
+$hot-color:#FFE180;
+
+body{
+  font-family: PingFang TC;
+  box-sizing:border-box;
+}
+a{
+  text-decoration: none;
+}
+.wrapper{
+  color: $primary-color;
+  width: 1024px;
+  margin: 30px auto 0;
+}
+.headerBox{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+header{
+  width: 940px;
+  margin:0 auto 60px;
+}
+
+.logo{
+  span{
+    display: none ;
+  }
+  img{
+    width: 210px;
+  }
+}
+
+.main-nav{
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  a{
+    color: $primary-color;
+    font-weight: 600;
+  }
+}
+main{
+  width: 940px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.kinds{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  width: 300px;
+  flex-shrink: 0;
+  order:0;
+  h2{
+    color:$secondary-color;
+    background-color: $primary-color;
+    padding: 16px;
+  }
+  li{
+    border: 1px solid $secondary-color;
+    border-top:none;
+  }
+  li.selected{
+    background-color: $secondary-color;
+  }
+  a{
+    display: block;
+    color: $primary-color;
+    padding: 16px;
+  }
+
+}
+
+.productionsBox{
+  order:1;
+  
+}
+
+.productions{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li{
+    width: 300px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  figcaption{
+    font-size: 20px;
+    display: flex;
+    span{
+      display: inline-block;
+      padding: 14px;
+      border: 1px solid $secondary-color;
+    }
+  }
+  .name{
+    font-weight: 300;
+    flex-grow: 1;
+  }
+  .buy{
+    a{
+      font-size: 24px;
+      color: $primary-color;
+      padding: 16px;
+      display: block;
+    }
+    
+    background-color:$secondary-color;
+  }
+  .favorite{
+    position: absolute;
+    top:20px;
+    right:22px;
+  }
+  .today{
+    position: absolute;
+    color: $secondary-color;
+    background-color:$primary-color;
+    width: 16px;
+    line-height: 1.2;
+    height: 80px;
+    padding: 10px;
+    top:0px;
+    left:20px;
+  }
+}
+
+
+.pages{
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  li{
+    width: 58px;
+    height: 60px;
+    border: 1px solid $secondary-color;
+    border-left: none;
+    a{
+      color: $primary-color;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    &:first-child{
+      border: 1px solid $secondary-color;
+    }
+  }
+  li.selected{
+    
+    background-color:$primary-color;
+    a{
+      color: $secondary-color;
+    }
+  }
+}
+
+
+.subscribe{
+  height: 116px;
+  background-color: $primary-color;
+  color: $secondary-color;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  form{
+    width: 380px;
+
+    input[type=email]{
+      width: 256px;
+      height: 56px;      
+      background-color:$secondary-color;
+      background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/mail-24px.png);
+      background-repeat: no-repeat;
+      background-position: 20px center;
+      padding: 0;
+      padding-left: 60px;
+      outline: none;
+      border: none;
+      &:focus{
+        outline: 5px solid $hot-color;
+        height: 46px;  
+      }
+    }
+    input[type=submit]{
+      color: transparent;
+      background-color:$hot-color;
+      background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 64px;
+      height: 56px;
+      padding: 0;
+      outline: none;
+      border: none;
+      
+    }
+  }
+}
+
+.mailBox{
+  display: flex;
+  align-items: center;
+  
+  img{
+    width: 40px;
+    margin-right: 20px;
+  }
+  h2{
+    width: 216px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+footer{
+  font-family: Helvetica Neue;
+
+  background-color:$secondary-color;
+  
+}
+.infoBox{
+  padding:40px 122px 30px;
+  
+  address ul{
+    height: 68px;
+    margin-top: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  
+}
+.icBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+.ic{
+    
+  display: flex;
+  margin-top: 30px;
+  img{
+    width: 32px;
+    margin-right: 8px;
+  }
+}
+
+.logo-dark{
+  width: 172px;
+}

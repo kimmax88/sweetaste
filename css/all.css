@@ -1,0 +1,430 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: PingFang TC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  color: #3F5D45;
+  width: 1024px;
+  margin: 30px auto 0;
+}
+
+.headerBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+header {
+  width: 940px;
+  margin: 0 auto 60px;
+}
+
+.logo span {
+  display: none;
+}
+
+.logo img {
+  width: 210px;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav a {
+  color: #3F5D45;
+  font-weight: 600;
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.kinds {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  width: 300px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.kinds h2 {
+  color: #EAF0ED;
+  background-color: #3F5D45;
+  padding: 16px;
+}
+
+.kinds li {
+  border: 1px solid #EAF0ED;
+  border-top: none;
+}
+
+.kinds li.selected {
+  background-color: #EAF0ED;
+}
+
+.kinds a {
+  display: block;
+  color: #3F5D45;
+  padding: 16px;
+}
+
+.productionsBox {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.productions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.productions li {
+  width: 300px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.productions figcaption {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productions figcaption span {
+  display: inline-block;
+  padding: 14px;
+  border: 1px solid #EAF0ED;
+}
+
+.productions .name {
+  font-weight: 300;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.productions .buy {
+  background-color: #EAF0ED;
+}
+
+.productions .buy a {
+  font-size: 24px;
+  color: #3F5D45;
+  padding: 16px;
+  display: block;
+}
+
+.productions .favorite {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+}
+
+.productions .today {
+  position: absolute;
+  color: #EAF0ED;
+  background-color: #3F5D45;
+  width: 16px;
+  line-height: 1.2;
+  height: 80px;
+  padding: 10px;
+  top: 0px;
+  left: 20px;
+}
+
+.pages {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 10px;
+}
+
+.pages li {
+  width: 58px;
+  height: 60px;
+  border: 1px solid #EAF0ED;
+  border-left: none;
+}
+
+.pages li a {
+  color: #3F5D45;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pages li:first-child {
+  border: 1px solid #EAF0ED;
+}
+
+.pages li.selected {
+  background-color: #3F5D45;
+}
+
+.pages li.selected a {
+  color: #EAF0ED;
+}
+
+.subscribe {
+  height: 116px;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe form {
+  width: 380px;
+}
+
+.subscribe form input[type=email] {
+  width: 256px;
+  height: 56px;
+  background-color: #EAF0ED;
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/mail-24px.png);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  padding: 0;
+  padding-left: 60px;
+  outline: none;
+  border: none;
+}
+
+.subscribe form input[type=email]:focus {
+  outline: 5px solid #FFE180;
+  height: 46px;
+}
+
+.subscribe form input[type=submit] {
+  color: transparent;
+  background-color: #FFE180;
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 64px;
+  height: 56px;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+.mailBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mailBox img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.mailBox h2 {
+  width: 216px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+footer {
+  font-family: Helvetica Neue;
+  background-color: #EAF0ED;
+}
+
+.infoBox {
+  padding: 40px 122px 30px;
+}
+
+.infoBox address ul {
+  height: 68px;
+  margin-top: 115px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.ic {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.ic img {
+  width: 32px;
+  margin-right: 8px;
+}
+
+.logo-dark {
+  width: 172px;
+}
+/*# sourceMappingURL=all.css.map */
